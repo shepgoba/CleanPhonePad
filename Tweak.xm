@@ -22,14 +22,15 @@ static BOOL prefsLoaded = NO;
 @synthesize callButton=_callButton;
 @end
 
-static void initPrefs() 
+static void initPrefs() //big thanks to noisyflake for preference loading
 {
-	// Copy the default preferences file when the actual preference file doesn't exist
-	NSString *path = @"/User/Library/Preferences/com.shepgoba.cleanphonepadprefs.plist";
+
+	NSString *pathToPrefs = @"/User/Library/Preferences/com.shepgoba.cleanphonepadprefs.plist";
 	NSString *pathDefault = @"/Library/PreferenceBundles/cleanphonepadprefs.bundle/defaults.plist";
 	NSFileManager *fileManager = [NSFileManager defaultManager];
+	
 	if (![fileManager fileExistsAtPath:path]) {
-		[fileManager copyItemAtPath:pathDefault toPath:path error:nil];
+		[fileManager copyItemAtPath:pathDefault toPath:pathToPrefs error:nil];
 	}
 }
 
