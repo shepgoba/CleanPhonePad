@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>CleanPhonePad</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.shepgoba.cleanphonepadprefs</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key> 					<string>PSGroupCell</string>
+			<key>label</key> 					<string>Radii</string>
+		</dict>
+		<dict>
+			<key>cell</key>						
+			<string>PSEditTextCell</string>
+			<key>default</key>					
+			<true/>
+			<key>defaults</key>					
+			<string>com.shepgoba.cleanphonepadprefs</string>
+			<key>placeholder</key> 				
+			<string>20</string>
+			<key>key</key>						
+			<string>radiusNumButtons</string>
+			<key>label</key>					
+			<string>Radius (0-9 buttons):</string>
+		</dict>
+		<dict>
+			<key>cell</key>						
+			<string>PSEditTextCell</string>
+			<key>default</key>					
+			<true/>
+			<key>defaults</key>					
+			<string>com.shepgoba.cleanphonepadprefs</string>
+			<key>placeholder</key> 				
+			<string>20</string>
+			<key>key</key>						
+			<string>radiusCallButton</string>
+			<key>label</key>					
+			<string>Radius (call button):</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSTableCell</string>
+			<key>label</key>
+			<string>🚫 Respring (kill app, wait 10 sec)</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>@shepgoba</string>
+			<key>action</key>
+			<string>openTwitter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
