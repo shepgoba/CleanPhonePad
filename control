@@ -1,0 +1,9 @@
+Package: com.shepgoba.cleanphonepad
+Name: CleanPhonePad
+Depends: mobilesubstrate
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: A tweak to make the Phone app keypad cleaner.
+Maintainer: shepgoba
+Author: shepgoba
+Section: Tweaks
